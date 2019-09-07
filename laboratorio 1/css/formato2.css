@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Lexend+Zetta|Shadows+Into+Light&display=swap');
+
+*, ::before , ::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing:border-box;
+}
+.card{
+    width: 80%;
+    margin: 5px auto 2px;
+    border: 1px solid black;
+    background-color: blueviolet;
+    color:white;
+    box-shadow: 0px 2px 7px gray;
+    padding: 10px;
+border-left: 10px solid blue;
+min-height: 100px
+}
+.categoria{
+    font-size:  1em;
+  font-family:  'Shadows Into Light', cursive;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: aquamarine
+}
+.card h2{
+    font-family: 'Lexend Zetta', sans-serif;
+    text-transform: capitalize;
+    margin-top: 1em;
+    font-size: 2em;
+}
+.card:hover{
+    border-left-color: darkmagenta;
+    background-color: darkorchid;
+}
