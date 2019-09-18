@@ -1,0 +1,25 @@
+@import "componentes/mixin";
+@import "componentes/variables";
+body{
+    background-image: $imagen;
+}
+  
+.container{
+   @include flex-center-conteiner();
+}
+
+.header{
+    @include flex-center-heder()
+}
+#footer >.contac{
+   @include footer();
+}
+
+
+#main > .titulo{
+ @include titulo();
+    
+}
+#main > .portada{
+@include portada();
+}
