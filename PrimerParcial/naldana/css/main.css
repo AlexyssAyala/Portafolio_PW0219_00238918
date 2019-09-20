@@ -63,8 +63,11 @@ p{
 i.fas.fa-arrow-circle-down {
     font-size: -webkit-xxx-large;
     color:  #0AC693
+   
 }
-
+fa, .fas {
+    font-weight: 900;
+}
 /* Big area */
 .big-hero img {
     width: 150px;
@@ -248,11 +251,9 @@ footer{
 }
 
 footer .social-links {
- 
-        margin: 2em;
-      display: flex;
-      justify-content: space-evenly;
-    
+    margin: 2em;
+  display: flex;
+  justify-content: space-evenly
 }
 
 .menu {
