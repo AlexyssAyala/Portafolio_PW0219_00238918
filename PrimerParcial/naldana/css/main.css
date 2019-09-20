@@ -248,9 +248,11 @@ footer{
 }
 
 footer .social-links {
-    margin: 2em;
-  display: flex;
-  justify-content: center;
+ 
+        margin: 2em;
+      display: flex;
+      justify-content: space-evenly;
+    
 }
 
 .menu {
