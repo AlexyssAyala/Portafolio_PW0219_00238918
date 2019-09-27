@@ -1,4 +1,6 @@
-
+/**
+ * ejercicio 1
+ */
 function tipeof(a =[3 , "numero",true]){
 for (let i = 0; i < a.length; i++) {
   typeof(i);
@@ -76,7 +78,7 @@ if(texto())
 
 }
 /*
-ejercicio 6
+ejercicio 7
 */
 function fibonacci(numero)
 {
@@ -97,8 +99,11 @@ console.log(var3);
 }
 fibonacci(5);
 /*
-ejercicio 7
+ejercicio 8
 */
+function desimal(){
+
+}
 
 
 
