@@ -101,8 +101,10 @@ fibonacci(5);
 /*
 ejercicio 8
 */
-function desimal(){
-
+var a=255;
+desimal(a);
+function desimal(a){
+    console.log(a.toString(2));
 }
 
 
