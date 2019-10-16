@@ -170,17 +170,20 @@ fa, .fas {
 /* About */
 
 .about{
-    margin-top: 2em;
-display: grid;
+margin-top: 2em;
 
-
+}
+.about .container{
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 .about h2 {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.125em;
     margin: 2em;
-
+    grid-column-start: 1;
+    grid-column-end:3;
 }
 
 .bio-info img{
@@ -195,7 +198,10 @@ display: grid;
     line-height: 25px;
     letter-spacing: 2px;
 }
-
+.bio-info{
+   grid-column-start: 1;
+   grid-column-end: 2;
+}
 .contact {
     display: flex;
     flex-direction: column;
@@ -210,7 +216,7 @@ display: grid;
 .contact-form {
     display: flex;
     flex-direction: column;
-    
+   
 }
 
 .contact-form input, .contact-form textarea{
@@ -219,7 +225,9 @@ display: grid;
     border-radius: 0px 2em;
     font-size: 1em;
     width: 100%;
+  
 }
+
 
 /* Decorando placeholder */
 
