@@ -22,6 +22,7 @@ new_row.innerHTML =
 <td>${element.tarde}</td>`
 let new_cell = document.createElement("td")
 let new_btn = document.createElement("button")
+let new_cell2 =document.createElement("td")
 let new_text = document.createElement("INPUT")
 
 /**
@@ -29,25 +30,31 @@ let new_text = document.createElement("INPUT")
 */
 
 new_btn.className = "btn btn-danger"
-new_btn.innerText = "!#$%&?"
+new_text.className="form-control"
+new_btn.innerText = "Eliminar"
 new_btn.value = element.id
 new_text.setAttribute("type", "text");
 new_btn.addEventListener("click", event =>{
 let id_actual = event.target.value
 
 student_list.forEach((element, pos)=>{
-if(id_actual == element.id ){
+if(id_actual == element.id && new_text.value==element.carnet){
+    alert("eliminando...")
 student_list.splice(pos,1)
 printArray()
 }
+else{
+    alert("confirme su carnet")
+}
 })
 })
-
 new_cell.appendChild(new_btn)
 new_row.appendChild(new_cell)
-new_cell.appendChild(new_text)
-new_row.appendChild(new_cell)
 table_body.appendChild(new_row)
+new_cell2.appendChild(new_text)
+new_row.appendChild(new_cell2)
+table_body.appendChild(new_row)
+
 })
 }
 
